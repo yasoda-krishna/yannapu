@@ -8,13 +8,22 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav id="navbar">
+  <!-- Navigation -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Website Logo" style="height: 40px;">
+      </a>
+    </div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
@@ -23,12 +32,17 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+    <!-- Hamburger Menu Icon -->
+    <div class="burger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
 
   <!-- Home Section -->
   <section id="home" class="section" style="background-image: url('images/home-bg.jpg');">
     <div class="content">
-      <h1>Yasoda Krishna Annapureddy</h1>
+      <h1 class="glowing-text">Yasoda Krishna Annapureddy</h1>
       <p>Software Engineer | Data Scientist</p>
     </div>
   </section>
@@ -126,37 +140,35 @@
     </div>
   </section>
 
-  <!-- Certifications & Publications Section -->
+  
+<!-- Certifications & Publications Section -->
 <section id="certifications" class="section">
   <div class="content">
-    <h1>Certifications & Publications</h1>
-    <div class="certifications-section">
-      <ul>
-        <!-- Certification 1 -->
-        <li>
-          <a href="https://certificates.automationanywhere.com/70fe5d18-1d74-4c6f-97fb-461e92271ffe#gs.eiadnc" target="_blank" rel="noopener noreferrer">
-            Automation Anywhere Certified Advanced RPA Professional
-          </a>
-        </li>
-        <!-- Certification 2 -->
-        <li>
-          <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/119031e6150544aaa21d7975e279e809" target="_blank" rel="noopener noreferrer">
-            AWS Solutions Architect Associate
-          </a>
-        </li>
-        <!-- Certification 3 -->
-        <li>
-          <a href="https://www.credly.com/badges/032ffa25-273c-4ca9-8fee-6415c96a0a9b" target="_blank" rel="noopener noreferrer">
-            Certified Kubernetes Application Developer
-          </a>
-        </li>
-        <!-- Publication -->
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            Fake Face Creation Using Generative Adversarial Networks 
-          </a>
-        </li>
-      </ul>
+    <h1>Certifications</h1>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-card">
+          <h2>AWS Solutions Architect Associate</h2>
+          <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/119031e6150544aaa21d7975e279e809" target="_blank" rel="noopener noreferrer">View Certification</a>
+        </div>
+        <div class="carousel-card">
+          <h2>Certified Kubernetes Application Developer</h2>
+          <a href="https://www.credly.com/badges/032ffa25-273c-4ca9-8fee-6415c96a0a9b" target="_blank" rel="noopener noreferrer">View Certification</a>
+        </div>
+        <div class="carousel-card">
+          <h2>Automation Anywhere Certified Advanced RPA Professional</h2>
+          <a href="https://certificates.automationanywhere.com/70fe5d18-1d74-4c6f-97fb-461e92271ffe#gs.eiadnc" target="_blank" rel="noopener noreferrer">View Certification</a>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+      <!-- Navigation Indicators -->
+      <div class="carousel-nav">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        
+        <!-- Add more dots corresponding to the number of cards -->
+      </div>
     </div>
   </div>
 </section>
